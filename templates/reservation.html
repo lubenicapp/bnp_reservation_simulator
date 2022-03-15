@@ -21,15 +21,16 @@
 
     <div style="height: 20vh"></div>
     <div class="columns">
-        <div class="column"></div>
+        <div class="column is-1"></div>
         <div class="column is-10" style="border-radius: 50px; background-color: #ff52b2">
             <div class="columns">
-                <div class="column"><img src="/app/staticatic/fork.png" alt="" style="margin-top: 0.7em"></div>
+                <div class="column is-narrow"></div>
+                <div class="column"><img src="/static/fork.png" alt="" style="margin-top: 1em; margin-left: 0.5em"></div>
                 <div class="column is-narrow"><p style="font-size: 3em; color: white; font-weight: bold; margin-top: 1.5vh;">Restaurant </p></div>
                 <div class="column is-6"></div>
             </div>
             <div style="height: 2vh"></div>
-            <div class="columns" style="width: 65%">
+            <div class="columns">
                 <div class="column is-1"></div>
                 <div class="column is-narrow">
                     <p>
@@ -39,35 +40,36 @@
                     </p>
                 </div>
             </div>
-            <div style="height: 1vh"></div>
-            <div class="columns" style="width: 65%">
-                <div class="column is-1"></div>
-                <div class="column is-narrow">
-                    <p>
-                        <i class="fa-solid fa-calendar-day" style="color: white; font-size: 4em">   </i> <span style="font-size: 3em; color: white; margin-left: 0.5em">Date</span>
-                        <br>
-                        <span style="font-size: 3em; color: white; font-weight: bold; margin-left: 1.8em;">{{date}} - {{hour}}</span>
-                    </p>
-                </div>
-            </div>
+
             <div style="height: 1vh"></div>
             <div class="columns">
                 <div class="column is-1"></div>
-                <div class="column is-10" style="width: 70%">
+                <div class="column is-narrow">
                     <p>
-                        <i class="fa-solid fa-user" style="color: white; font-size: 4em">   </i> <span style="font-size: 3em; color: white; margin-left: 0.5em">Email</span>
+                        <img src="/static/calendar.png" alt=""> <span style="font-size: 3em; color: white; margin-left: 0.5em">Date</span>
                         <br>
-                    </p>
-                    <p style=" margin-left: 5.2em; word-break: break-word;">
-                        <span style="font-size: 3em; color: white; font-weight: bold;">{{email}}</span>
+                        <span style="font-size: 3em; color: white; font-weight: bold; margin-left: 1.6em;">{{date}} - {{hour}}</span>
                     </p>
                 </div>
-                <div class="column"></div>
+            </div>
+
+            <div style="height: 1vh"></div>
+            <div class="columns">
+                <div class="column is-1"></div>
+                <div class="column">
+                    <p>
+                        <img src="/static/bonhomme.png" alt=""> <span style="font-size: 3em; color: white; margin-left: 0.5em">Email</span>
+                        <br>
+                        <p style=" margin-left: 5.2em; word-break: break-all;">
+                        <span style="font-size: 3em; color: white; font-weight: bold;">{{email}}</span>
+                        </p>
+                    </p>
+                </div>
             </div>
             <div style="height: 1vh"></div>
 
         </div>
-        <div class="column"></div>
+        <div class="column is-1"></div>
     </div>
 </body>
 </html>
