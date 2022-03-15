@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="utf-8">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af7ef9f1db.js" crossorigin="anonymous"></script>
+<body style="font-family: 'Rubik', sans-serif;">
+
+
+    <div class="top" style="margin-top: 2em">
+        <div class="columns is-mobile" style="color : #173967">
+            <div class="column" style="margin-left: 4em"><h2 class="title is-1" style="color : #173967"><</h2></div>
+            <div class="column has-text-centered" style="margin-left: -4em"><h1 class="title is-1" style="color : #173967">Réservation</h1></div>
+            <div class="column"></div>
+        </div>
+    </div>
+    <hr style="height:2px; width:100%; border-width:0; color: lightgray; background-color: lightgrey">
+
+    <div style="height: 20vh"></div>
+    <div class="columns" style="height: 41vh;">
+        <div class="column"></div>
+        <div class="column is-10" style="border-radius: 50px; background-color: #ff52b2">
+            <div class="columns">
+                <div class="column"><img src="/app/staticatic/fork.png" alt="" style="margin-top: 0.7em"></div>
+                <div class="column is-narrow"><p style="font-size: 3em; color: white; font-weight: bold; margin-top: 1.5vh;">Restaurant </p></div>
+                <div class="column is-6"></div>
+            </div>
+            <div style="height: 2vh"></div>
+            <div class="columns" style="width: 65%">
+                <div class="column is-1"></div>
+                <div class="column is-narrow">
+                    <p>
+                        <i class="fa-solid fa-location-dot" style="color: white; font-size: 4em">   </i> <span style="font-size: 3em; color: white; margin-left: 0.7em">Lieu</span>
+                        <br>
+                        <span style="font-size: 3em; color: white; font-weight: bold; margin-left: 1.8em;">Restaurant Unicity</span>
+                    </p>
+                </div>
+            </div>
+            <div style="height: 1vh"></div>
+            <div class="columns" style="width: 65%">
+                <div class="column is-1"></div>
+                <div class="column is-narrow">
+                    <p>
+                        <i class="fa-solid fa-calendar-day" style="color: white; font-size: 4em">   </i> <span style="font-size: 3em; color: white; margin-left: 0.5em">Date</span>
+                        <br>
+                        <span style="font-size: 3em; color: white; font-weight: bold; margin-left: 1.8em;">{{date}} - {{hour}}</span>
+                    </p>
+                </div>
+            </div>
+            <div style="height: 1vh"></div>
+            <div class="columns" style="width: 65%">
+                <div class="column is-1"></div>
+                <div class="column is-7">
+                    <p>
+                        <i class="fa-solid fa-user" style="color: white; font-size: 4em">   </i> <span style="font-size: 3em; color: white; margin-left: 0.5em">Email</span>
+                        <br>
+                    </p>
+                    <p style=" margin-left: 5.2em;">
+                        <span style="font-size: 3em; color: white; font-weight: bold;">{{email}}</span>
+                    </p>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+        <div class="column"></div>
+
+
+
+    </div>
+</body>
+</html>
