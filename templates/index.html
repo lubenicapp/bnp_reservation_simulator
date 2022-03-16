@@ -3,18 +3,38 @@
     <meta charset="utf-8">
     <title>Reservation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-<body>
+    <body>
+        <div style="height: 30vh"></div>
+        <div class="columns">
+            <div class="column is-3"></div>
 
+            <div class="column is-6" style="width: 70vw">
+                <form action="/reservation" method="get" target="_blank">
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="text" name="email" placeholder="firstname.name@bnpparibas-pf.com">
+                    </div>
 
-<form action="/reservation" method="get" target="_blank">
-  <label for="name">email</label>
-  <input type="text" id="email" name="email" placeholder="firstname.name@bnpparibas-pf.com"><br><br>
-  <label for="date">date</label>
-  <input type="text" id="date" name="date" placeholder="12 Juin 2022"><br><br>
-    <label for="hour">hour</label>
-  <input type="text" id="hour" name="hour" placeholder="12:20"><br><br>
-  <input type="submit" value="Submit">
-</form>
-
-</body>
+                    <label class="label">Date</label>
+                    <div class="control">
+                        <input class="input" type="text" name="date" value="{{now}}">
+                    </div>
+                    <label class="label" >Hour</label>
+                        <div class="select">
+                            <select name="hour">
+                                {% for hour in hours %}
+                                <option value="{{hour}}">{{hour}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button class="button is-primary" type="submit" value="Submit"> Submit </button>
+                    </div>
+                </form>
+            </div>
+            <div class="column is-3"></div>
+        </div>
+    </body>
 </html>
