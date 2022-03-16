@@ -15,6 +15,7 @@ def landing():
     for i in range(11, 14, 1):
         for j in range(0, 60, 10):
             hours.append(f"{i}:{j:02d}")
+    hours = hours[3::]
 
     today = date.today()
     day = today.strftime('%d')
