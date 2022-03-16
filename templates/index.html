@@ -4,24 +4,24 @@
     <title>Reservation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <body>
-        <div style="height: 30vh"></div>
+        <div style="height: 5vh"></div>
         <div class="columns">
             <div class="column is-3"></div>
 
-            <div class="column" style="width: 70vw">
+            <div class="column is-size-4" style="width: 70vw">
                 <form action="/reservation" method="get" target="_blank">
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
+                <div class="field is-size-4">
+                    <label class="label is-size-4">Email</label>
+                    <div class="control is-size-4">
                         <input class="input" type="text" name="email" placeholder="firstname.name@cetelem.com">
                     </div>
 
-                    <label class="label">Date</label>
-                    <div class="control">
+                    <label class="label is-size-4">Date</label>
+                    <div class="control is-size-4">
                         <input class="input" type="text" name="date" value="{{now}}">
                     </div>
-                    <label class="label" >Hour</label>
-                        <div class="select">
+                    <label class="label">Hour</label>
+                        <div class="select is-size-4">
                             <select name="hour">
                                 {% for hour in hours %}
                                 <option value="{{hour}}">{{hour}}</option>
