@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 from datetime import date
 import random
+from firstnames import firstnames
+from lastnames import lastnames
 
 app = Flask(__name__)
 
@@ -15,20 +17,12 @@ def get_hours():
     hours = hours[3::]
     return hours
 
+
 def random_email():
-    firstnames = []
-    lastnames = []
     host = ['cetelem', 'bnpparibas-pf']
-    with open('names.csv') as file:
-        for line in file:
-            split = line.replace(',', ' ').split(' ')
-            firstnames.append(split[0])
-            lastnames.append(split[1])
-
     email = f'{random.choice(firstnames)}.{random.choice(lastnames)}@{random.choice(host)}.com'
-    return email
+    return email.lower()
 
-    pass
 
 def get_today():
     today = date.today()
@@ -52,5 +46,6 @@ def reservation():
 
 
 if __name__ == '__main__':
+    load_email()
     app.run()
 
