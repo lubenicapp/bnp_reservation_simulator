@@ -9,6 +9,7 @@ app = Flask(__name__)
 months = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',
           'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
 
+
 def get_hours():
     hours = []
     for i in range(11, 14, 1):
